@@ -1,0 +1,152 @@
+<style>
+ul{list-style: none;
+padding-left: 0;
+}
+ul li {
+display: inline-block;
+width: 320px;
+height: 50px;
+}
+</style>
+<style>
+body {margin:0;padding:0;}
+
+#hero {
+  position:relative;
+}
+
+#hero video {
+  height:100vh;
+  width:100%;
+  background-position:absolute;
+  z-index:10;
+  object-fit:cover;
+}
+
+#hero .content {
+  background:rgba(0,0,0,0.5);
+  height:100%;
+  width:100%;
+  z-index:20;
+  position:absolute;
+  top:0;
+  left:0;
+  text-align:center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .content h1 {
+  color:#FFF;
+  font-family:Arial,sans-serif;
+}
+
+#hero .content p {
+  font-size:18px;
+  color:#FFF;
+  font-family:Arial,sans-serif;
+}
+</style>
+<style>
+
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.neon
+{
+    display:inline-flex;
+    filter:brightness(300%);
+    overflow: hidden;
+}
+
+.metin
+{
+    color:white;
+    font-size: 55px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    padding: 10px;
+    background: black;
+}
+
+.metin::before
+{
+    content:attr(data-metin);
+    position: absolute;
+    mix-blend-mode: difference;
+    filter:blur(2px);
+}
+
+.renk{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: radial-gradient(circle,blue,yellow,red,green);
+    mix-blend-mode: multiply;
+}
+
+
+.parilti
+{
+    position: absolute;
+    width:200%;
+    height:200%;
+    background: radial-gradient(circle,white,black 55%) center/5% 33%;
+    animation: animasyon 10s linear infinite;
+    mix-blend-mode: color-dodge;
+}
+
+@keyframes animasyon{
+    from {transform:translate(-50%,-50%);}
+    to {transform:translate(0%,0%);}
+}
+
+</style>
+<style>
+ul{list-style: none;
+padding-left: 0;
+}
+ul li {
+display: inline-block;
+width: 320px;
+height: 50px;
+}
+</style>
+<style tyle="" type="text/css">
+a:linka,a:visited
+{
+background-color: #f44336;
+color:white;
+padding: 15px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+}
+a:hover{
+background-color: red;
+color: white;
+
+}
+</style>
+<style>
+.arkaplan {
+width: 1300px;
+height: 300px;
+background: url(https://lh3.googleusercontent.com/8A1fbia8tCtlPSHgtkngrqU8MEC4fuv0w-07gLEqbO1nX5h-EzetPVLOQSXbgyUER3HWE-kO90bYFPRfIGjXgKkUptIJNcJaT9n0lc26G_KCOo1orGyzfRcyJjh_dmdXRtabgFHwm7ejtMOhFKxd14ewNk2__tVPwYyMhqDFGbzZ0qDim6-2c1pYTcCOfnbc__a_0D30XH_SAzC_CmYl-sSfqqniTf3GUnPjMx_MO1sT_rk9fgBGWYI84vJ2W97p77CoSjs9ddpidlD3OiV-J1yGTGcnlJhzajdssUHqOe_5qo-rU7Y4m7qsi4NHrDJfbdMVx9PJs_uI6iKwDRuTOyXg5WXa9ydg_HVhDpCWrwH8ZlvDEq_HvrCYokhaqx-C4won7d3ew0ihu9TC-_Fst7g0dE4PuqEljPy6ajzN68JWW4VGPJfPxvckMDnPLFGz4_4459snTHDZ77RfbMx0SlcvX9V8R99MA08QwejDtTPrMm_e1H_5hD1AxtYFbTHejzPuFSgPqi0ArgrhOUdEpTByiXb16pn-HPGuIIuViZEXuULSHJSqpovQO0B6WAwNn81mRd31oxyQnImkQyTff-CrySsmNbXfMAGU4C49YJxljcgwxHfRJYWSec8oT1M59xf1mT5clVJ_5FkMoihhlBYuFm7tQoHh3mUUWu88t7bqmdc94y60YCjEbZmJ=w681-h312-no?authuser=0) no-repeat;
+background-attachment:fixed;
+</style>
+<meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="description" content="Entry challenge for joining Hack The Box. You have to hack your way in!"> <meta name="keywords" content="pen testing,hack,hacking,penetration testing,infosec,information security,labs"> <meta name="author" content="Hack The Box"> <meta name="google-site-verification" content="ut2KvZ-Bku4Vdbk1hfkkiX6W_Gb_9-CR9UD8ZU4B0mU"> <meta property="og:title" content="Can you hack this box?"> <meta property="og:url" content="https://www.hackthebox.eu"> <meta property="og:image" content="https://www.hackthebox.eu/images/favicon.png"> <meta property="og:site_name" content="Hack The Box"> <meta property="fb:app_id" content="269224263502219"> <meta property="og:description" content="An online platform to test and advance your skills in penetration testing and cyber security."> <meta name="csrf-token" content="27giDYJXLVm8w84rdCcgbbIihMxQ3zvdBxFEpF1d"> <meta name="wot-verification" content="1eeefbec1f6305acd476"> <script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/0TfpkI8Z8dM5cArXmzVpfEBmj10vpbfI/analytics.min.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/0TfpkI8Z8dM5cArXmzVpfEBmj10vpbfI/analytics.min.js"></script><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "Organization", "url": "https://www.hackthebox.eu", "name": "Hack The Box", "contactPoint": [{ "@type": "ContactPoint", "telephone": "+44-203-6178-265", "contactType": "emergency" }], "sameAs": [ "https://www.facebook.com/hackthebox.eu", "https://www.linkedin.com/company/hackthebox", "https://twitter.com/hackthebox_eu" ], "logo": "https://www.hackthebox.eu/images/favicon.png", "description": "An online platform to test and advance your skills in penetration testing and cyber security.", "founder": { "@type": "Person", "name": "Haris Pylarinos" }, "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.95", "bestRating": "5", "worstRating": "1", "ratingCount": "797" } } </script> <script> !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0"; analytics.load("0TfpkI8Z8dM5cArXmzVpfEBmj10vpbfI"); analytics.page("Invite"); }}(); </script> <title>Hack The Box :: Can you hack this box?</title> <link rel="canonical" href="https://www.hackthebox.eu/invite"> <style type="text/css"> body { overflow-y: unset!important; } .particles_full { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: -1!important; } </style> <link rel="stylesheet" href="https://www.hackthebox.eu/css/htb-frontend.css"> <link rel="stylesheet" href="https://www.hackthebox.eu/css/icons.css"> <link rel="icon" href="/images/favicon.png"> <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-757546894"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-757546894'); </script> <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/757546894/?random=1612451273211&amp;cv=9&amp;fst=1612451273211&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_his=5&amp;u_tz=180&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2oa1r0&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.hackthebox.eu%2Finvite&amp;ref=https%3A%2F%2Fwww.hackthebox.eu%2Flogin&amp;tiba=Hack%20The%20Box%20%3A%3A%20Can%20you%20hack%20this%20box%3F&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+   
